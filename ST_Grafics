@@ -1,0 +1,29 @@
+from graphics import Canvas
+import random
+
+CANVAS_WIDTH = 300
+CANVAS_HEIGHT = 300
+SIZE = 40
+N = 40
+
+def main():
+    canvas = Canvas(CANVAS_WIDTH, CANVAS_HEIGHT)
+    num = random.randint (1,20)
+    for i in range (num):
+        draw_circles (canvas)
+    
+def draw_circles(canvas):
+    random_size = random.randint (10,50)
+    x1 = random.randint (0, CANVAS_WIDTH  - random_size)
+    y1 = random.randint (0, CANVAS_HEIGHT - random_size)
+    x2 = x1 + random_size
+    y2 = y1 + random_size
+    canvas.create_oval (x1,y1,x2,y2, random_color())
+
+def random_color():
+    colors = ['blue', 'purple', 'salmon', 'lightblue', 'cyan', 'forestgreen']
+    return random.choice(colors)
+    
+
+if __name__ == '__main__':
+    main()
