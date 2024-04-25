@@ -1,0 +1,26 @@
+from graphics import Canvas
+    
+CANVAS_WIDTH = 400
+CANVAS_HEIGHT = 400
+
+def main():
+   from graphics import Canvas
+
+ # Cores dos quadrados
+    colors = ["green", "yellow"]
+
+    # Tamanho dos quadrados
+    square_size = 20
+
+    for y in range(0, 400, square_size):
+        for x in range(0, 400, square_size):
+            # Determinar a cor do quadrado com base nas coordenadas
+            color = colors[(x // square_size + y // square_size) % 2]
+
+            # Desenhar o quadrado no canvas
+            canvas.create_rectangle(x, y, x + square_size, y + square_size, fill=color)
+
+    canvas.mainloop()
+    
+if __name__ == '__main__':
+    main()
