@@ -1,0 +1,21 @@
+#Blood Pressure Average Checker.
+#It prompts the user to enter systolic and diastolic blood pressure values, checks if they are within the expected range, calculates the average blood pressure if they are, and displays the result.
+
+def main():
+    # Create variables for systolic and diastolic blood pressure
+    systolic = int(input("Enter the value of systolic blood pressure: "))
+    diastolic = int(input("Enter the value of diastolic blood pressure: "))
+
+    # Check if the blood pressure is between 140 and 90
+    if systolic >= 140 and diastolic >= 90:
+        # Calculate the average blood pressure
+        average = (systolic + diastolic) / 2
+        # Display the average to the user
+        print("The average blood pressure is: ", average)
+    else:
+        # Display an error message if the blood pressure is not within the expected range
+        print("The blood pressure is not within the expected range.")
+
+
+if __name__ == "__main__":
+    main()
