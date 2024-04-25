@@ -1,0 +1,32 @@
+from karel.stanfordkarel import *
+
+def main():
+    while (left_is_clear()):
+    put_beeper_line()
+    reset_position()
+    put_beeper_line()
+
+
+def put_beeper_line():
+    put_beeper()
+    while (front_is_clear()) 
+    move()
+    put_beeper()
+    
+
+def reset_position(): 
+    turn_around()
+    while (front_is_clear()) 
+    move()
+    
+    turn_right()
+    move()
+    turn_right()
+    
+def turn_right ():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+if __name__ == '__main__':
+    main()
