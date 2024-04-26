@@ -1,0 +1,18 @@
+def main():
+    """
+    You should write your code here. Make sure to delete 
+    the 'pass' line before starting to write your own code.
+    """
+    pass
+
+import random
+
+# Loop to generate 10 random numbers
+for _ in range(10):
+  # Generate a random integer between 1 and 100 (inclusive)
+  number = random.randint(1, 100)
+  # Print the random number
+  print(number)
+  
+if __name__ == '__main__':
+    main()
