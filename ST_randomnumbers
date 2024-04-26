@@ -1,3 +1,4 @@
+#Print 10 random numbers in the range 1 to 100
 def main():
     """
     You should write your code here. Make sure to delete 
